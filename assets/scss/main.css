@@ -1,0 +1,137 @@
+/*Colors-----*/
+/*Fonts-----*/
+/*Overlays-----*/
+main button {
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "Mukta", sans-serif;
+  font-size: 15px;
+  padding: 5px 14px;
+  margin: 40px 0px; }
+  main button:hover {
+    background-color: #0085fa; }
+
+main button:hover, nav .nav-button:hover div, .nav2 .nav-links li a:hover, .social-links li a:hover {
+  -moz-transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  cursor: pointer; }
+
+html {
+  background: url(https://www.wanderlustmovement.org/wp-content/uploads/2017/11/pexels-photo-196660.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Mukta", sans-serif;
+  color: #fff;
+  margin: 0;
+  min-height: 100vh; }
+
+/*Navigation----------------------------------------*/
+nav .nav-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  cursor: pointer;
+  z-index: 2; }
+  nav .nav-button:hover div {
+    background-color: #0085fa; }
+  nav .nav-button div {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 6px;
+    width: 37px;
+    height: 2.5px; }
+nav .menu {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1; }
+nav .nav1 {
+  right: 0;
+  text-align: center; }
+  nav .nav1 img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    border-radius: 50%; }
+
+.nav2 {
+  bottom: 0; }
+  .nav2 .nav-links {
+    list-style: none;
+    text-align: center;
+    padding: 0px; }
+    .nav2 .nav-links li {
+      margin: 20px 0px; }
+      .nav2 .nav-links li a {
+        color: #fff;
+        cursor: pointer;
+        font-size: 22px; }
+        .nav2 .nav-links li a:hover {
+          color: #0085fa; }
+
+/*Main Section-----------------------------------------*/
+main {
+  text-align: center; }
+  main h1 {
+    margin: 0px;
+    padding-top: 25vh;
+    font-size: 13vw;
+    font-weight: 400;
+    letter-spacing: -3px; }
+    main h1 span {
+      color: #0085fa; }
+  main h3 {
+    font-weight: 400;
+    margin: 0px; }
+
+/*Social Links-----------------------------------*/
+.social-links {
+  margin: 0;
+  padding: 0; }
+  .social-links li {
+    display: inline;
+    font-size: 25px;
+    margin: 0px 10px; }
+    .social-links li a {
+      color: #fff; }
+      .social-links li a:hover {
+        color: #0085fa; }
+
+/*Media Queries-----------*/
+@media (min-width: 992px) {
+  nav .nav1 {
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%; }
+    nav .nav1 img {
+      width: 200px; }
+
+  nav .nav2 {
+    right: 0;
+    width: 50%;
+    height: 100%;
+    top: 0; }
+
+  .nav2 .nav-links {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    .nav2 .nav-links li a {
+      font-size: 26px; }
+
+  main h1 {
+    font-size: 7vw; } }
+
+/*# sourceMappingURL=main.css.map */

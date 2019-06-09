@@ -1,0 +1,21 @@
+%buttonize {
+    background-color: transparent;
+    border: 1.5px solid #fff;
+    border-radius: 30px;
+    color: $main-color;
+    font-family: $primary-font;
+    font-size: 15px;
+    padding: 5px 14px;
+    margin: 40px 0px;
+    &:hover {
+        background-color: $accent-color;
+        @extend %hover;
+    }
+}
+
+%hover {
+    -moz-transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    cursor: pointer;
+}

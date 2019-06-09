@@ -1,0 +1,165 @@
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+@import "helpers/_helpers.scss";
+
+
+html {
+    background: url(https://www.wanderlustmovement.org/wp-content/uploads/2017/11/pexels-photo-196660.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-color: $overlay;
+    font-family: $primary-font;
+    color: $main-color;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/*Navigation----------------------------------------*/
+
+nav {
+    .nav-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        cursor: pointer;
+        z-index: 2;
+        &:hover {
+            div {
+                background-color: $accent-color;
+                @extend %hover;
+            }
+        }
+        div {
+            background-color: #fff;
+            border-radius: 5px;
+            margin: 6px;
+            width: 37px;
+            height: 2.5px;
+        }
+    }
+    .menu {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+    .nav1 {
+        right: 0;
+        text-align: center;
+        img {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.nav2 {
+    bottom: 0;
+    .nav-links {
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+        li {
+            margin: 20px 0px;
+            a {
+                color: #fff;
+                cursor: pointer;
+                font-size: 22px;
+                &:hover {
+                    color: $accent-color;
+                    @extend %hover;
+                }
+            }
+        }
+    }
+}
+
+/*Main Section-----------------------------------------*/
+
+main {
+    text-align: center;
+    h1 {
+        margin: 0px;
+        padding-top: 25vh;
+        font-size: 13vw;
+        font-weight: 400;
+        letter-spacing: -3px;
+        span {
+            color: $accent-color;
+        }
+    }
+    h3 {
+        font-weight: 400;
+        margin: 0px;
+    }
+    button {
+        @extend %buttonize;
+    }
+
+}
+
+/*Social Links-----------------------------------*/
+
+.social-links {
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline;
+        font-size: 25px;
+        margin: 0px 10px;
+        a {
+            color: #fff;
+            &:hover {
+                color: $accent-color;
+                @extend %hover;
+            }
+        }
+    }
+}
+
+/*Media Queries-----------*/
+
+@media(min-width: 992px) {
+    nav .nav1 {
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        img {
+            width: 200px;
+        }
+    }
+
+
+    nav .nav2 {
+        right: 0;
+        width: 50%;
+        height: 100%;
+        top: 0;
+    }
+
+    .nav2 .nav-links {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        li a {
+            font-size: 26px;
+        }
+    }
+
+    main h1 {
+        font-size: 7vw;
+    }
+
+
+}
